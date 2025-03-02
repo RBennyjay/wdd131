@@ -12,7 +12,6 @@
      text-align: left;
      height: 100px;
      padding: 0.1em;
-     margin:o;
      width: auto;
  }
 
@@ -27,7 +26,6 @@
      display: flex;
      justify-content: space-around;
      width: auto;
-     /* width: 100%; */
      box-sizing: border-box;
  }
 
