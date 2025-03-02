@@ -11,7 +11,9 @@
      color: #fff;
      text-align: left;
      height: 100px;
-     padding: 1em;
+     padding: 0.1em;
+     margin:o;
+     width: auto;
  }
 
  /* Navigation */
@@ -24,6 +26,9 @@
      text-align: center;
      display: flex;
      justify-content: space-around;
+     width: auto;
+     /* width: 100%; */
+     box-sizing: border-box;
  }
 
  nav a {
@@ -63,3 +68,5 @@
      width: auto;
      height: 120px;
  }
+
+ 
