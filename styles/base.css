@@ -8,7 +8,20 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+}
+
+
+
+.card-body {
+    flex-grow: 1;
+    border: 1px solid grey;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .card-inner-1 {
@@ -25,14 +38,6 @@ body {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     margin-top: 25px;
-}
-
-.card-body {
-    height: 85%;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .all-center {
@@ -131,6 +136,7 @@ header {
 }
 
 /* Navigation */
+
 nav {
     background-color: #444;
     color: #fff;
@@ -138,6 +144,7 @@ nav {
     font-weight: bolder;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -147,20 +154,31 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0.5em 1em;
-    flex-grow: 1;
-    text-align: center;
-    padding: 1em;
-}
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    line-height: 1;
+    height: auto;
+    margin: 0;
+   }
 
 nav a:hover {
     color: orangered;
 }
 
+/* Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 10px;
+    align-items: stretch;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 main {
@@ -172,7 +190,22 @@ main {
 
 aside {
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
+aside .card,
+.main-content .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+aside .card {
+    flex-grow: 1;
+    margin-bottom: 30px;
+   }
 
 /* Footer */
 footer {
@@ -225,14 +258,12 @@ footer {
         margin: 0 auto;
     }
 
-
     .card-inner-3 h3 {
         width: 90%;
         margin: 0 auto;
         text-align: center;
     }
 
-  
     .card-inner-2 p.p2 {
         width: 95%;
         margin: 10px auto;
@@ -260,7 +291,6 @@ footer {
         margin: 0 auto;
     }
 
-   
     .card-inner-3 h3 {
         width: 95%;
         margin: 0 auto;
@@ -320,24 +350,6 @@ footer {
 }
 
 @media (max-width: 380px) {
-    .card-inner-2 p.p2 {
-        font-size: 0.85em;
-        line-height: 1.3;
-    }
-
-    .card-inner-2 img.img-2 {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-/* Further adjustments for extremely small screens */
-@media (max-width: 350px) {
     .card-inner-2 p.p2 {
         font-size: 0.85em;
         line-height: 1.3;
