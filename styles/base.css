@@ -12,9 +12,6 @@ body {
     flex-direction: column;
     height: 100%;
 }
-
-
-
 .card-body {
     flex-grow: 1;
     border: 1px solid grey;
@@ -37,7 +34,6 @@ body {
     color: white;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    margin-top: 25px;
 }
 
 .all-center {
@@ -55,6 +51,7 @@ p {
 h2 {
     background-color: #1D4D72;
     color: #ffffff;
+    font-size: 1.2em;
 }
 
 h2:hover {
@@ -129,39 +126,52 @@ header {
     background-color: #1D4D72;
     color: #fff;
     text-align: center;
-    height: 100px;
-    padding: 0.1em;
     width: 100%;
     box-sizing: border-box;
-}
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+header h1 {
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.8rem;
+    font-weight: bold;
+ }
 
 /* Navigation */
-
 nav {
     background-color: #444;
     color: #fff;
-    height: 50px;
+    height: 35px;
     font-weight: bolder;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
+    margin-top: auto;
+   }
 
+/* Navigation Links */
 nav a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-flex;
+    all: unset;
+    display: flex;
     align-items: center;
     justify-content: center;
+    height: 50px;
     padding: 0 1em;
-    line-height: 1;
-    height: auto;
-    margin: 0;
-   }
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 nav a:hover {
     color: orangered;
@@ -173,6 +183,7 @@ nav a:hover {
     grid-template-columns: 3fr 1fr;
     gap: 10px;
     align-items: stretch;
+    
 }
 
 .main-content {
