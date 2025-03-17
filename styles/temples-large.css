@@ -1,0 +1,30 @@
+/* Large Screen Navigation */
+@media (min-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+        }
+}
+
