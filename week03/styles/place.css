@@ -1,0 +1,155 @@
+/* General Page Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+   
+}
+
+/* Universal Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Header & Footer */
+header,
+footer {
+    background-color: #2C3E50;
+    
+    color: #ECF0F1;
+    
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Data & Weather Box */
+.data-box,
+.weather-box {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    width: 300px;
+}
+
+/* Positioning the Boxes */
+.data-box {
+    top: 20px;
+    left: 20px;
+}
+
+.weather-box {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Box Headers */
+.data-box h2,
+.weather-box h2 {
+   
+    background-color: #2C3E50;
+    
+    color: #FFFFFF;
+    
+    padding: 10px;
+    margin: -15px -15px 10px -15px;
+    font-size: 1.5em;
+}
+
+/* Text & Icons */
+.data-box p,
+.weather-box p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #333;
+   
+}
+
+.data-box i,
+.weather-box i {
+    color: #FFC107;
+    
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .data-box,
+    .weather-box {
+        width: 80%;
+        max-width: none;
+        position: relative;
+        margin: 10px auto;
+    }
+
+    .data-box {
+        top: 10px;
+        left: auto;
+        right: auto;
+    }
+
+    .weather-box {
+        bottom: 10px;
+        left: auto;
+        right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    .data-box,
+    .weather-box {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .data-box h2,
+    .weather-box h2 {
+        font-size: 18px;
+    }
+
+    .data-box p,
+    .weather-box p {
+        font-size: 12px;
+    }
+}
+
+#last-modified {
+    color: #ECF0F1;
+    font-size: 10px;
+}
