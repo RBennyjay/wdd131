@@ -1,4 +1,3 @@
-/* General Page Styles */
 body {
     display: flex;
     flex-direction: column;
@@ -7,9 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
-   
-}
-
+  }
 /* Universal Box Sizing */
 *,
 *::before,
@@ -21,9 +18,7 @@ body {
 header,
 footer {
     background-color: #2C3E50;
-    
     color: #ECF0F1;
-    
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -82,7 +77,6 @@ footer {
     margin: -15px -15px 10px -15px;
     font-size: 1.5em;
 }
-
 /* Text & Icons */
 .data-box p,
 .weather-box p {
@@ -99,7 +93,6 @@ footer {
     color: #FFC107;
     
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero {

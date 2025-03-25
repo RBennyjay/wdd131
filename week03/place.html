@@ -11,9 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -29,12 +27,12 @@
             <picture>
                 <source srcset="images/lagosbr-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/lagosbr-medium.webp" media="(min-width: 500px)">
-                <img src="images/lagosbr-small.webp" alt="Lagos Blue Rail" width="500" height="250">
+                <img src="images/lagosbr-small.webp" alt="Lagos Blue Rail" width="500" height="250" loading="lazy">
             </picture>
-            <i class="fas fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 90deg;"></i>
-            <div class="data-box">
-                <h2><i class="fa-solid fa-chart-line"></i> Data</h2>
-                <p><i class="fas fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 90deg;"></i>
+    
+            <!-- Data Section -->
+            <section class="data-box" aria-labelledby="data-title">
+                <h2 id="data-title"><i class="fa-solid fa-chart-line"></i> Data</h2>
                 <p><i class="fa-solid fa-globe"></i> <strong>Country:</strong> Nigeria</p>
                 <p><i class="fa-solid fa-map"></i> <strong>State:</strong> Lagos</p>
                 <p><i class="fa-solid fa-users"></i> <strong>Population:</strong> 20+ million</p>
@@ -43,17 +41,17 @@
                 <p><i class="fa-solid fa-clock"></i> <strong>Time Zone:</strong> UTC+1 (WAT)</p>
                 <p><i class="fa-solid fa-phone"></i> <strong>Calling Code:</strong> +234</p>
                 <p><i class="fa-solid fa-globe"></i> <strong>Internet TLD:</strong> .ng</p>
-            </div>
-
-            <div class="weather-box">
-                <h2><i class="fa-solid fa-cloud-sun"></i> Weather</h2>
-                <p><i class="fas fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: 90deg;"></i>
+            </section>
+    
+            <!-- Weather Section -->
+            <section class="weather-box" aria-labelledby="weather-title">
+                <h2 id="weather-title"><i class="fa-solid fa-cloud-sun"></i> Weather</h2>
                 <p><i class="fas fa-thermometer-half"></i> <strong>Temperature:</strong> <span id="temperature">10</span>°C</p>
                 <p><i class="fas fa-cloud"></i> <strong>Conditions:</strong> Partly Cloudy</p>
                 <p><i class="fas fa-wind"></i> <strong>Wind:</strong> <span id="windSpeed">5</span> km/h</p>
                 <p><i class="fas fa-tint"></i> <strong>Humidity:</strong> 85%</p>
                 <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
-            </div>
+            </section>
         </div>
     </main>
 
