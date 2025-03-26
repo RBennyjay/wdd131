@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
@@ -29,29 +28,31 @@
                 <source srcset="images/lagosbr-medium.webp" media="(min-width: 500px)">
                 <img src="images/lagosbr-small.webp" alt="Lagos Blue Rail" width="500" height="250" loading="lazy">
             </picture>
-    
-            <!-- Data Section -->
             <section class="data-box" aria-labelledby="data-title">
-                <h2 id="data-title"> Data  <i class="fa-solid fa-chart-line"></i> </h2>
-                <p><i class="fa-solid fa-globe"></i> <strong>Country:</strong> Nigeria</p>
-                <p><i class="fa-solid fa-map"></i> <strong>State:</strong> Lagos</p>
-                <p><i class="fa-solid fa-users"></i> <strong>Population:</strong> 20+ million</p>
-                <p><i class="fa-solid fa-landmark"></i> <strong>Capital:</strong> Ikeja</p>
-                <p><i class="fa-solid fa-money-bill"></i> <strong>Currency:</strong> Nigerian Naira</p>
-                <p><i class="fa-solid fa-clock"></i> <strong>Time Zone:</strong> UTC+1 (WAT)</p>
-                <p><i class="fa-solid fa-phone"></i> <strong>Calling Code:</strong> +234</p>
-                <p><i class="fa-solid fa-globe"></i> <strong>Internet TLD:</strong> .ng</p>
-            </section>
-    
-            <!-- Weather Section -->
-            <section class="weather-box" aria-labelledby="weather-title">
-                <h2 id="weather-title"> Weather <i class="fa-solid fa-cloud-sun"></i> </h2>
-                <p><i class="fas fa-thermometer-half"></i> <strong>Temperature:</strong> <span id="temperature">10</span>°C</p>
-                <p><i class="fas fa-cloud"></i> <strong>Conditions:</strong> Partly Cloudy</p>
-                <p><i class="fas fa-wind"></i> <strong>Wind:</strong> <span id="windSpeed">5</span> km/h</p>
-                <p><i class="fas fa-tint"></i> <strong>Humidity:</strong> 85%</p>
-                <p><i class="fas fa-temperature-low"></i> <strong>Wind Chill:</strong> <span id="windChill"></span></p>
-            </section>
+            <h2 id="data-title">Data</h2>
+            <p><strong>Country:</strong> Nigeria</p>
+            <p><strong>State:</strong> Lagos</p>
+            <p><strong>Population:</strong> 20+ million</p>
+            <p><strong>Capital:</strong> Ikeja</p>
+            <p><strong>Currency:</strong> Nigerian Naira</p>
+            <p><strong>Time Zone:</strong> UTC+1 (WAT)</p>
+            <p><strong>Calling Code:</strong> +234</p>
+            <p><strong>Internet TLD:</strong> .ng</p>
+        </section>
+        
+        <section class="weather-box" aria-labelledby="weather-title">
+            <h2 id="weather-title">
+                Weather
+                <span class="weather-icon"></span>
+            </h2>
+            <p><strong>Temperature:</strong> <span id="temperature">10</span>°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="windSpeed">5</span> km/h</p>
+            <p><strong>Humidity:</strong> 85%</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </section>
+
+
         </div>
     </main>
 

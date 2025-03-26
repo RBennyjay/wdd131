@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 3px;
     background-color: #F5F5F5;
+    text-align: center;
 }
 
 /* Universal Box Sizing */
@@ -56,6 +57,7 @@ footer {
     font-weight: bold;
     width: 230px;
     margin: 20px;
+    text-align: center;
 }
 
 /* Positioning the Boxes */
@@ -77,23 +79,30 @@ footer {
     padding: 10px;
     margin: -15px -15px 10px -15px;
     font-size: 1.5em;
+    align-items: center;
+}
+
+.weather-box h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Text & Icons */
 .data-box p,
 .weather-box p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: block;
+    text-align: center;
     font-size: 14px;
     color: #333;
+    margin: 5px 0;
 }
 
 .data-box i,
 .weather-box i {
     color: #FFC107;
+    text-align: center;
 }
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero {
@@ -103,11 +112,13 @@ footer {
     .data-box,
     .weather-box {
         width: 80%;
-       position: relative;
+        position: relative;
         margin: 8px auto;
         padding: 8px;
         box-shadow: none;
-        }
+        background-color: white !important;
+      
+    }
 
     .data-box {
         top: auto;
@@ -118,8 +129,20 @@ footer {
         bottom: auto;
         right: auto;
     }
-}
 
+    .data-box p,
+    .weather-box p {
+        color: #000;
+        
+    }
+
+    .data-box h2,
+    .weather-box h2 {
+        background-color: white;
+        color: black;
+       
+    }
+}
 @media (max-width: 480px) {
     header h1 {
         font-size: 22px;
@@ -146,3 +169,25 @@ footer {
     color: #ECF0F1;
     font-size: 10px;
 }
+
+.weather-icon {
+    color: yellow;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .weather-box h2 {
+        flex-direction: row;
+    }
+
+    .weather-icon {
+        font-size: 2em;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+}
+
+.weather-box p i {
+    display: none;
+}
+

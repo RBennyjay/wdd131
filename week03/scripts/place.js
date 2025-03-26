@@ -18,3 +18,24 @@ const temperature = parseFloat(document.getElementById("temperature").textConten
 const windSpeed = parseFloat(document.getElementById("windSpeed").textContent);
 
 document.getElementById("windChill").textContent = calculateWindChill(temperature, windSpeed);
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth < 768) {
+        fetch('images/weather.svg')
+            .then(response => response.text())
+            .then(svgContent => {
+                const weatherIconContainer = document.querySelector('.weather-icon');
+                if (weatherIconContainer) {
+                    weatherIconContainer.outerHTML = svgContent;
+                    const inlineSVG = document.querySelector('svg');
+                    inlineSVG.classList.add('weather-icon');
+                    inlineSVG.style.width = '20px';
+                    inlineSVG.style.height = '20px';
+                }
+            });
+    } else {
+        document.querySelector('.weather-icon').innerHTML = '&#9729;';
+    }
+});
