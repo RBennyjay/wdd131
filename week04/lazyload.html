@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about lazy loading and how it improves website performance by loading images only when they are needed.">
+    <meta name="author" content="Ebenezer John">
+    <title>WDD 131 - Lazy Load Demonstration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header><h1>Lazy Load Demonstration</h1></header>
+    <main>
+        <picture>
+       
+         <img src="http://placebear.com/400/650" alt="Placeholder Bear Image" loading="lazy" width="400" height="650">
+        </picture>
+        <p>Lazy loading is an effective technique that enhances website performance by loading images only when they are needed.
+        Instead of forcing all images to load at once, which can slow down a webpage, lazy loading defers the loading process
+        until the user scrolls to an image. This approach reduces initial load time and improves overall user experience,
+        especially on mobile devices and slower connections.</p>
+
+        <p>For this demonstration, I am using Placebear.com, a placeholder image service that provides adorable bear images. As you
+        scroll down, bear images will load dynamically, showcasing how lazy loading works in real-world applications. This
+        method is particularly useful for image-heavy websites, ensuring faster loading times while still delivering engaging
+        visual content</p>
+        <picture>
+        <img src="http://placebear.com/400/700" alt="Placeholder Bear Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+        <img src="http://placebear.com/400/653" alt="Placeholder Bear Image" loading="lazy" width="400" height="600">
+        </picture>
+        <img src="http://placebear.com/400/654" alt="Placeholder Bear Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+        <img src="http://placebear.com/400/655" alt="Placeholder Bear Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+        <img src="http://placebear.com/400/656" alt="Placeholder Bear Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+        <img src="http://placebear.com/400/657" alt="Placeholder Bear Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+        <img src="http://placebear.com/400/505" alt="Placeholder Bear Image" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    
+    <footer>
+        <span>&copy; <span id="current-year"></span> 🌺 Ebenezer John 🌺 Nigeria</span><br>
+        <span id="last-modified"></span>
+    </footer>
+    
+</body>
+</html>
