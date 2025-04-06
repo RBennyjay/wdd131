@@ -1,0 +1,175 @@
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+     line-height: 1.6;
+    padding: 0 15px;
+}
+
+/* Header Styling */
+header {
+    background-color: #1a4b84;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    height: 200px;
+}
+
+header h1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+header .logo {
+    max-height: 100px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #1a4b84;
+     padding: 5px 0;
+    text-align: center;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #ffb703;
+    
+}
+
+/* Banner Section Styling */
+.banner {
+    background-color: #ffb703;
+    color: #1a4b84;
+    padding: 40px 20px;
+    text-align: center;
+    height: 400px;	
+}
+
+.banner h2 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.banner p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #1a4b84;
+   }
+
+section ul {
+    list-style: none;
+}
+
+section ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+section ul li strong {
+    font-weight: 700;
+    color: #c23c33;
+    
+}
+
+section ul li a {
+    color: #1a4b84;
+    /* Navy Blue */
+    text-decoration: none;
+}
+
+section ul li a:hover {
+    color: #ffb703;
+  
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a4b84;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+footer #current-year {
+    font-weight: 700;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
