@@ -1,0 +1,143 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header and Footer Styling */
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Last Modified Text */
+#last-modified {
+    color: #d0d0d0;
+ 
+    font-size: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    
+    color: #fff;
+   
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Adjusted text color in footer for clarity */
+footer p {
+    color: #d0d0d0;
+    
+}
+
+/* Main Content */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Form Styling */
+form label,
+form legend {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Input Fields and Textarea Styling */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #004d4d;
+}
+
+/* Rating Option Styling */
+.rating-option label {
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Rating Wrapper Styling */
+.rating-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Rating Option Styling */
+.rating-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Radio Button Styling */
+.rating-wrapper input[type="radio"] {
+    width: 1.4rem;
+    height: 1.4rem;
+    accent-color: #004d4d;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    accent-color: #004d4d;
+}
+
+/* Footer Responsiveness */
+footer {
+    margin-top: 2rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    main {
+        max-width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
