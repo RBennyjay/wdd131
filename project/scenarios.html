@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ikeja Landlord and Property Owners Association</title>
+    <meta name="description" content="A sample website for the Ikeja Landlord and Property Owners Association. Provides resources, updates, and helpful information for landlords and property owners in Ikeja." />
+    <meta name="author" content="Ebenezer John" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload the fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        as="style" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" />
+    
+    <!-- Main Styles and Scripts -->
+    <link rel="stylesheet" href="styles/main-project1.css" />
+    <script src="scripts/main-project.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/ikeja-landlord-logo.svg" alt="Ikeja Landlord and Property Owners Association Logo"
+            class="logo">
+        <h1>Ikeja Landlord and Property Owners Association</h1>
+        <button id="menu" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="sr-only">Toggle Menu</span> ☰
+        </button>
+
+        <nav>
+            <ul id="nav-menu" class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="site-purpose.html">Purpose</a></li>
+                <li><a href="scenarios.html" class="active">Scenarios</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="wireframes.html">Wireframes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="scenario-card">
+            <h2>Scenarios We Help With</h2>
+
+            <!-- Scenario Cards -->
+        <div class="scenario-cards-container">
+            <div class="scenario-card">
+                <img src="images/eviction.webp" alt="Eviction process" loading="lazy" width="600" height="400">
+                <h3>Tenant Eviction</h3>
+                <p>Clear guidance on legal eviction steps to avoid disputes.</p>
+            </div>
+            <div class="scenario-card">
+                <img src="images/property-tax.webp" alt="Property tax" loading="lazy" width="600" height="400">
+                <h3>Property Taxes</h3>
+                <p>Manage assessments and payments effectively.</p>
+            </div>
+            <div class="scenario-card">
+                <img src="images/legal-issues.webp" alt="Legal rights" loading="lazy" width="600" height="400">
+                <h3>Legal Rights</h3>
+                <p>Understand your legal standing as a landlord in Lagos.</p>
+            </div>
+            <div class="scenario-card">
+                <img src="images/tennant-relations.webp" alt="Tenant relations" loading="lazy" width="600" height="400">
+                <h3>Tenant Relations</h3>
+                <p>Improve communication and minimize conflict with tenants.</p>
+            </div>
+            <div class="scenario-card">
+                <img src="images/house-mtce.webp" alt="Maintenance schedule" loading="lazy" width="600" height="400">
+                <h3>Maintenance Management</h3>
+                <p>Organize repairs and inspections efficiently to keep tenants happy.</p>
+            </div>
+            <div class="scenario-card">
+                <img src="images/home-security.webp" alt="Security upgrades" loading="lazy" width="600" height="400">
+                <h3>Security Upgrades</h3>
+                <p>Enhance property security and safety for occupants and landlords alike.</p>
+            </div>
+        </div>
+
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <span>&copy; <span id="current-year"></span> 🌺 Ebenezer John 🌺 Nigeria</span><br>
+        <span id="last-modified"></span>
+    </footer>
+    <button id="back-to-top" title="Go to top">↑</button>
+</body>
+
+</html>

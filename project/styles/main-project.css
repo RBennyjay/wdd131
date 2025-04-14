@@ -1,0 +1,633 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+     min-height: 100vh;
+     margin: 0;
+        
+}
+
+/* Header */
+header {
+    background: #004d4d;
+    color: #ffffff;
+    /* padding: 10px; */
+    text-align: center;
+    width: 100%;
+    position: relative;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding-bottom: 50px;
+        /* space for nav */
+    position: relative;
+    
+   
+}
+
+h1 {
+    font-size: 50px;
+   
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+
+    overflow-x: hidden;
+   
+    
+}
+
+/* Show nav when 'open' class is added */
+.navigation.open {
+    display: flex;
+}
+
+/* Navigation Menu */
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    z-index: 1000;
+ 
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto.woff2') format('woff2');
+    font-display: swap;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+.navigation a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color:#ffffff;
+    transition: background 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+    background-color: #e0e0e0;
+    color: #222;
+    font-weight: bold;
+}
+
+.navigation.show {
+    display: flex;
+}
+
+/* Menu Button */
+#menu {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+#menu::before {
+    content: "";
+}
+
+#menu.open::before {
+    content: "";
+}
+
+/* Show Menu Items When Open */
+.open a {
+    display: block;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background: #004d4d;
+    color: #ffffff;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Ensure the footer stays at the bottom */
+html,
+body {
+    height: 100%;
+        margin: 0;
+      
+        flex-direction: column;
+}
+
+main {
+min-height: calc(100vh - 180px - 80px);
+    padding-bottom: 80px;
+    flex: 1;
+        
+  
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+     display:block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+#last-modified {
+    color: #ffeb3b;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Large Screen Navigation */
+@media (min-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+    }
+}
+
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button.secondary {
+    background-color: #1a4b84;
+}
+
+.cta-button:hover {
+    background-color: #922d26;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+
+    width: 90%;
+     max-width: 600px;
+}
+
+
+/* Call-to-Action Buttons */
+.cta-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #006666;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.cta-button.secondary:hover {
+    background-color: #922d26;
+}
+
+
+#site-purpose {
+    text-align: center;
+     padding: 2rem 1rem;
+}
+
+#site-purpose h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1a4b84
+}
+
+#site-purpose p {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    
+    font-size: 1.1rem;
+    line-height: 1.6;
+
+    color: #333;
+}
+
+
+.homepage-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 3rem 1rem;
+    background-color: #f5f5f5;
+}
+
+.preview-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* transition: transform 0.3s ease-in-out; */
+    min-height: 380px;
+}
+
+.preview-card:hover {
+    transform: translateY(-10px);
+    /* Optional: adds a hover effect */
+}
+
+.preview-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #1a4b84;
+}
+
+.card-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+.card-content .cta-button {
+    background-color: #004d4d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.card-content .cta-button:hover {
+    background-color: #a22f29;
+}
+
+
+.page-section {
+    padding: 3rem 1.5rem;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.center-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #1a4b84;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: #333;
+}
+
+/* Scenario Section */
+.scenarios-section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+/* Grid Layout for Scenario Cards */
+.scenario-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Increased min width */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Scenario Card Styles */
+.scenario-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    min-height: 380px;
+    /* Ensures taller cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scenario-card:hover {
+    transform: translateY(-10px);
+}
+
+.scenario-card img {
+    width: 100%;
+    height: 180px;
+    /* Increased height */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.scenario-card h3 {
+    font-size: 1.3em;
+    color: #1a4b84;
+    margin: 0.5rem 0;
+}
+
+.scenario-card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* Extra Section Content (Text + Images) */
+.scenario-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.scenario-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.scenario-text ul li {
+    background-color: #f5f5f5;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-left: 5px solid #006666;
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+.scenario-image img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-section {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display: none;
+    background-color: #c23c33;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-top:hover {
+    background-color: #c23c33;
+}
+
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+    background-color: #1e1e1e;
+  
+}
+
+.dark-mode header,
+.dark-mode footer,
+.dark-mode section {
+    background-color: #2b2b2b;
+    border-color: #444;
+}
+
+#dark-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling specific sections */
+#site-purpose {
+    background-color: #f4f9f4;
+    /* Light greenish background */
+}
+
+#scenarios {
+    background-color: #f7f7f7;
+    /* Light gray background */
+}
+
+#color-schema {
+    background-color: #f1f8f4;
+    /* Very light green background */
+}
+
+/* Make the announcement banner full width and noticeable */
+#announcement-banner {
+  width: 100%;
+  background-color: #f9c74f;
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Close button for announcement */
+#announcement-banner .close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
